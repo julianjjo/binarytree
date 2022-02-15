@@ -1,10 +1,10 @@
 package com.test.binarytree.util;
 
 import com.test.binarytree.model.TreeCreationDataModel;
-import com.test.binarytree.structure.BinaryTree;
+import com.test.binarytree.structure.BinaryTreeStructure;
 
 public class RandomBinaryTreeUtility {
-    private BinaryTree binaryTreeAleatory  = new BinaryTree();
+    private BinaryTreeStructure binaryTreeAleatory  = new BinaryTreeStructure();
     private NumberUtility numberUtility = new NumberUtility();
     private TreeCreationDataModel treeCreationData;
 
@@ -14,7 +14,7 @@ public class RandomBinaryTreeUtility {
         generateRandomBinaryTree(); 
     }
 
-    public BinaryTree getRandomBinaryTree() {       
+    public BinaryTreeStructure getRandomBinaryTree() {       
         return binaryTreeAleatory;   
     }
 

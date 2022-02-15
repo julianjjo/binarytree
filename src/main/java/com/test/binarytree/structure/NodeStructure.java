@@ -1,11 +1,11 @@
 package com.test.binarytree.structure;
 
-public class Node {
+public class NodeStructure {
 	public int value;
-    public Node left;
-    public Node right;
+    public NodeStructure left;
+    public NodeStructure right;
 
-    public Node(int value) {
+    public NodeStructure(int value) {
         this.value = value;
         right = null;
         left = null;

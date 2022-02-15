@@ -6,13 +6,6 @@ public class BinaryTreeModel {
     private int maxNumberOfNodes;
     private String binaryTree;
 
-    public BinaryTreeModel(TreeCreationDataModel treeCreationData, String binaryTree) {
-        this.minValue = treeCreationData.getMaxValue();
-        this.maxValue = treeCreationData.getMinValue();
-        this.maxNumberOfNodes = treeCreationData.getMaxNumberOfNodes();
-        this.binaryTree = binaryTree;
-    }
-
     public void setMinValue(int minValue) {
         this.minValue = minValue;
     }

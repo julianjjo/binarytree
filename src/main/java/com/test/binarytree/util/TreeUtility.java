@@ -3,30 +3,22 @@ package com.test.binarytree.util;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.test.binarytree.structure.Node;
+import com.test.binarytree.structure.NodeStructure;
 
 public class TreeUtility {
     private String stringBinaryTreeOrder = "";
 
-	public void traversePreOrder(Node node) {
-		if (node != null) {
-            stringBinaryTreeOrder = stringBinaryTreeOrder + node.value + "-";
-			traversePreOrder(node.left);
-			traversePreOrder(node.right);
-		}
-	}
-
-	public void traverseLevelOrder(Node root) {
+	public void traverseLevelOrder(NodeStructure root) {
 		if (root == null) {
 			return;
 		}
 	
-		Queue<Node> nodes = new LinkedList<>();
+		Queue<NodeStructure> nodes = new LinkedList<>();
 		nodes.add(root);
 	
 		while (!nodes.isEmpty()) {
 	
-			Node node = nodes.remove();
+			NodeStructure node = nodes.remove();
 
 			stringBinaryTreeOrder = stringBinaryTreeOrder + node.value + "-";
 	
